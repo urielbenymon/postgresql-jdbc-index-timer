@@ -1,0 +1,41 @@
+ Installing PostgreSQL in VS Code addtional notes:
+   Download PostgreSQL first and make a database on there and create the other information
+
+   The default username is postgres and the password made was applepie when PostgresSQL was setup on this computer
+  applepie is the password for everything in postgresql
+  
+  After installing postgresql the database is accessed in the app pgAdmin 4
+   On VS Code:
+    Tap on the elephant to update PostgreSQL after installing
+    VS Code commands shortcut is: CTRL + Shift + P
+    To make a new query its: >PGSQL: New Query
+
+
+PGSQL in VS Code Notes:
+
+  Queries are saved to run them again without re-typing the code for it
+
+PGSQL Documentation notes:
+  The indexes are used to avoid sequential search O(N) runtime for searches by...
+  ...tieing an index to each column. 
+  ...This makes it so the item tied to the index is retrieved without having to check every column
+  Skeleton code: CREATE INDEX index_variable_name ON table_name (column_name);
+
+  Example use: SELECT * FROM users WHERE email = 'example@example.com';
+  above code goes straight to the index: B-tree, hash table, etc. where the data is stored...
+  ...w/o checking all the entries
+
+The structures used for insertion, deletion, and searching in Postgres:
+  B+ Trees
+  Hashing 
+  GIN
+  GiST
+  BRIN
+  SP-GiST
+
+
+
+
+
+
+    
